@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Simple Quiz</h1>
+    <form method="POST">
+      {% for q in questions %}
+      <div class="question">
+        <p><strong>Q{{ loop.index }}:</strong> {{ q.question }}</p>
+        {% for opt in q.options %}
+        <label>
+          <input type="radio" name="q{{ loop.parent.index0 }}" value="{{ opt }}" required>
+          {{ opt }}
+        </label>
+        {% endfor %}
+      </div>
+      {% endfor %}
+      <button type="submit">Submit</button>
+    </form>
+
+    {% if submitted %}
+    <div class="result">✅ You scored {{ score }}/{{ questions|length }}</div>
+    {% endif %}
+  </div>
+</body>
+</html>

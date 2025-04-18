@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    padding-top: 50px;
+    color: white;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+  
+  .question {
+    margin-bottom: 25px;
+  }
+  
+  label {
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 6px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  label:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: #00c6ff;
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(to right, #0058cc, #00aee0);
+  }
+  
+  .result {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #00ffc6;
+  }
+  
